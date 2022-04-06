@@ -1,4 +1,4 @@
-# MacOS Pulse Audio Sync Setup (mainaly for docker audio, but other things too)
+# MacOS Pulse Audio Sync Setup (mainly for docker audio, but other things too)
 
 install
 ```bash
