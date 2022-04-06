@@ -7,7 +7,9 @@ brew install pulseaudio
 
 copy default configs to your user dir 
 ```bash
-mdir ~/.pulse
+mkdir ~/.pulse
+```
+```bash
 cp -R $(brew --prefix)/opt/pulseaudio/etc/pulse/ ~/.pulse/
 ```
 
@@ -15,6 +17,13 @@ allow TCP connections from local networks (docker/vmware/localhost/other trusted
 
 ```bash
 echo -en  "\n### Allow docker to send us sound \nload-module module-native-protocol-tcp auth-ip-acl=127.0.0.0/8;10.0.0.0/8;172.16.0.0/12;192.168.0.0/16;fe80::/10" >> ~/.pulse/default.pa
+```
+
+OR localhost only
+
+
+```bash
+echo -en  "\n### Allow docker to send us sound \nload-module module-native-protocol-tcp auth-ip-acl=127.0.0.1" >> ~/.pulse/default.pa
 ```
 
 add some HQ audio syncs
