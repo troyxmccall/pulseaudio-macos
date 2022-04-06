@@ -47,3 +47,13 @@ check output of
 ```
 $(brew --prefix)/opt/pulseaudio/bin/pulseaudio --exit-idle-time=300 --verbose
 ```
+
+launch pulse-audio command (running `pacmd list-sources` or `pacmd list-sinks` will be truncated in bash with virtual devices, you need to fully go into the console
+
+```
+pacmd 
+```
+
+& set your syncs/sources
+
+
