@@ -5,7 +5,7 @@ install
 brew install pulseaudio
 ```
 
-copy default configs to your user dir 
+copy default configs to your user dir (make sure to do this when upgrading a major version, aka 14.x -> 16.x) 
 ```bash
 mkdir ~/.pulse
 ```
